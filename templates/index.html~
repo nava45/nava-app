@@ -61,8 +61,8 @@ height: 158px;
  <div class="container">
 
       <div class="starter-template">
-        <h1>Paste your poem</h1>
-        <p class="lead small"><br> </p>
+        <h1>Poem Designer</h1>
+        <p class="lead small">past your poem<br>& Get the image. </p>
       </div>
 
       <form class="form" action="" method="post" name="new-service" enctype=multipart/form-data>
