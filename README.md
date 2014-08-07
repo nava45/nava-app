@@ -1,9 +1,5 @@
-<<<<<<< HEAD
-poembackground
-==============
+#தமிழ் Poem Designer
 
-Tamil Poem background designer
-=======
-nava-app
-========
->>>>>>> 87715e80f1066e6abc4332cf64ec039098092cc9
+> A gift from Python
+
+![Demo](https://raw.githubusercontent.com/nava45/nava-app/master/screenshot/Tamil_Poem_Designer.gif)
