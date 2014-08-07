@@ -7,9 +7,9 @@ import sys
 import textwrap
 
 from optparse import OptionParser
-from Imaging.PIL import ImageFont
-from Imaging.PIL import Image,ImageOps
-from Imaging.PIL import ImageDraw
+from PIL import ImageFont
+from PIL import Image,ImageOps
+from PIL import ImageDraw
 
 
 FOREGROUND = (255, 255, 255)
