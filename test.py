@@ -3,13 +3,13 @@
 
 import os
 import sys
-import PIL
+#import PIL
 import textwrap
 
 from optparse import OptionParser
-from PIL import ImageFont
-from PIL import Image,ImageOps
-from PIL import ImageDraw
+from Imaging.PIL import ImageFont
+from Imaging.PIL import Image,ImageOps
+from Imaging.PIL import ImageDraw
 
 
 FOREGROUND = (255, 255, 255)
