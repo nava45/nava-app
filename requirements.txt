@@ -4,4 +4,5 @@ Werkzeug==0.8.3
 decorator==3.4.0
 gunicorn==0.17.2
 python-openid==2.2.5
+PIL==1.1.6
 

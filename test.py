@@ -60,7 +60,8 @@ def draw(img_path, font_path, font_color, text):
 
     #draw.text((center_width, y_text), draw_to_text, font = font, fill=128)
     draw = ImageDraw.Draw(img)
-    img.save('output.png')
+    img.save('static/images/output.png')
+   
     #text_to_draw = unicode(text,'utf-8')
     #print text, text_to_draw
     #w, h = draw.textsize(text)

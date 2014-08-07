@@ -18,6 +18,13 @@
 
 <script src="{{ url_for('static', filename='js/jquery-2.1.0.min.js') }}"></script>
 
+<script>
+function freshimg(image){
+if (image.src.indexOf("?") == -1)
+image.src = image.src + "?v=" + Date();
+}
+</script>
+
 <style>
 .form-control {
      display: block;
@@ -41,6 +48,10 @@ height: 158px;
 .results{
      /*margin-top:10%;*/
 }
+#butt {
+margin-left: 403px;
+margin-top: 20px;
+}
 </style>
 
 </head>
@@ -62,30 +73,34 @@ height: 158px;
 
       <div class="starter-template">
         <h1>Poem Designer</h1>
-        <p class="lead small">past your poem<br>& Get the image. </p>
+        <p class="lead small">beautify your தமிழ் poem.<br>even others too.. </p>
       </div>
 
+      <h3>Paste your Poem:</h3>
       <form class="form" action="" method="post" name="new-service" enctype=multipart/form-data>
       <div class="control-group">
           
           <div class="controls">
-               <textarea id="Search" name="Search" type="text" class="form-control input-xlarge search-query center-display" required=""></textarea>
+               <textarea id="poem" name="poem" class="form-control input-xlarge search-query center-display" required=""></textarea>
           </div>
 	<div class="control-group">
             <div class="controls">
-                <input class="btn btn-success btn-lg" type="submit" value="Click">
+                <input id="butt" class="btn btn-success btn-lg" type="submit" value="Click 2 Generate in Image">
             </div>
         </div>
      </div>
       
       </form>
       
+      {% if op %}
       <div class='results'>
-          <h3>done..</h3>
-          
+          <p>Hint: I think it's done.(right click and save image as..)</p>
+	  <h3>Download your Poem:</h3>
+          <img src={{op}} width='800px' height='600px' onload="freshimg(this)">
          
           
       </div>
+      {% endif %}
       
     </div><!-- /.container -->
 </body>
