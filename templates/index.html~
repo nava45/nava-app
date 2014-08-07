@@ -5,7 +5,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <link rel="shortcut icon" href="{{ url_for('static', filename='images/favicon.ico') }}" />
 <link rel="icon" href="{{ url_for('static', filename='images/favicon.png') }}" />
-<title>{% block title%}Poem generator{% endblock %}</title>
+<title>{% block title%}Tamil Poem generator{% endblock %}</title>
 <!-- Bootstrap -->
 <link href="{{ url_for('static', filename='css/bootstrap.min.css') }}" rel="stylesheet" type="text/css">
 
@@ -72,7 +72,7 @@ margin-top: 20px;
  <div class="container">
 
       <div class="starter-template">
-        <h1>Poem Designer</h1>
+        <h1>தமிழ் Poem Designer</h1>
         <p class="lead small">beautify your தமிழ் poem.<br>even others too.. </p>
       </div>
 
